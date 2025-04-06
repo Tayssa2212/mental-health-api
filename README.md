@@ -80,7 +80,7 @@ Os dados podem ser expandidos ou integrados com fontes externas.
 A API é apenas informativa e não substitui apoio psicológico profissional.
 
 👥 Contribuidores
-Seu Nome
+Tayssa Ramos
 
 Outros integrantes do grupo, se houver
 
