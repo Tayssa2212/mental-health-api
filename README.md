@@ -1,90 +1,63 @@
-🧠 MentalCare API
-A MentalCare API é uma API RESTful focada em saúde mental e bem-estar emocional. Foi desenvolvida como parte do trabalho final do módulo 3 do curso Full Stack Web da Programadores do Amanhã (PdA).
+MentalCare API
+A MentalCare API é uma aplicação utilitária voltada para o bem-estar emocional. Criada no contexto do projeto final do Módulo 3 do curso Full Stack Web da Programadores do Amanhã (PdA), ela fornece funcionalidades práticas que podem ser integradas a plataformas de autocuidado, educação emocional ou suporte psicológico.
+
 
 📌 Descrição
-A API disponibiliza recursos informativos e de apoio à saúde mental, como dicas de autocuidado, frases motivacionais e informações sobre serviços de suporte emocional. O objetivo é oferecer uma ferramenta útil e acessível que possa ser integrada a plataformas de apoio, sites educacionais, apps de bem-estar e muito mais.
+Esta API tem como objetivo oferecer recursos úteis e acessíveis voltados para a saúde mental. Ela disponibiliza frases motivacionais, exercícios de respiração guiada e uma lista de contatos de emergência emocional. A proposta é servir como ferramenta de apoio que pode ser utilizada de forma independente ou integrada a sistemas maiores.
 
-⚙️ Tecnologias Utilizadas
-Linguagem: JavaScript (ES6)
+⚙️ Estrutura da API
+A API é composta por três rotas principais:
 
-Ambiente de Execução: Node.js
+GET /inspirations: Retorna uma frase inspiradora aleatória.
 
-Framework: Express
+GET /breathing: Gera um guia com tempos para respiração consciente (inspirar, segurar, expirar).
 
-Documentação: Swagger (OpenAPI)
+GET /contacts: Lista contatos de emergência emocional, como CVV e SAMU.
 
-Formato de Dados: JSON
+🧰 Requisitos
+Node.js 18 ou superior
 
-📁 Estrutura da API
-pgsql
+NPM
+
+Navegador ou ferramenta de teste de APIs como Postman
+
+📜 Scripts
+json
 Copiar
 Editar
-mentalcare-api/
-├── src/
-│   ├── routes/
-│   │   └── mentalRoutes.js
-│   ├── data/
-│   │   ├── tips.json
-│   │   ├── quotes.json
-│   │   └── helpLines.json
-│   └── app.js
-├── swagger.json
-├── package.json
-└── server.js
-🔌 Endpoints
-GET /api/mental/tips
-Retorna uma lista de dicas práticas de autocuidado mental.
-
-GET /api/mental/quotes
-Retorna frases motivacionais para fortalecer o bem-estar emocional.
-
-GET /api/mental/help-lines
-Retorna uma lista de contatos de serviços de apoio psicológico no Brasil.
-
-🛠️ Como Executar o Projeto
-Clone o repositório
-
+"scripts": {
+  "start": "node server.js"
+}
+▶️ Como Rodar o Projeto
 bash
 Copiar
 Editar
 git clone https://github.com/seu-usuario/mentalcare-api.git
 cd mentalcare-api
-Instale as dependências
-
-bash
-Copiar
-Editar
 npm install
-Inicie o servidor
-
-bash
-Copiar
-Editar
 npm start
-Acesse a documentação Swagger
+Abra http://localhost:3000/api-docs no navegador para acessar a documentação interativa.
 
-bash
-Copiar
-Editar
-http://localhost:3000/docs
-🔐 Requisitos
-Node.js v16 ou superior
+📋 Regras de Negócio
+Fornecimento de conteúdo emocionalmente neutro e positivo.
 
-Navegador moderno (para acessar o Swagger UI)
+Acessibilidade das rotas sem autenticação (API aberta).
 
-📖 Regras de Negócio
-As dicas e frases são pré-definidas e simuladas via arquivos JSON.
+Dados fixos simulando uma base de informações úteis em situações de crise.
 
-Os dados podem ser expandidos ou integrados com fontes externas.
+Permite fácil extensão para novas funcionalidades (ex: dicas de meditação, exercícios mentais, etc.)
 
-A API é apenas informativa e não substitui apoio psicológico profissional.
+🛠️ Tecnologias Utilizadas
+Node.js
+
+Express
+
+Swagger UI Express
+
+JavaScript (ESModules)
 
 👥 Contribuidores
-Tayssa Ramos
-
-Outros integrantes do grupo, se houver
+[Tayssa Ramos]
 
 📄 Licença
-Este projeto está licenciado sob a Licença MIT – veja o arquivo LICENSE para mais detalhes.
-
-Se quiser, posso montar esse projeto e gerar um .zip com todos os arquivos prontos para subir no GitHub. Deseja isso?
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
