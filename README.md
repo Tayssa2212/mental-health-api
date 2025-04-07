@@ -32,8 +32,8 @@ Editar
 bash
 Copiar
 Editar
-git clone https://github.com/seu-usuario/mentalcare-api.git
-cd mentalcare-api
+git clone https://github.com/Tayssa2212/mental-health-api
+cd mental-health-api
 npm install
 npm start
 Abra http://localhost:3000/api-docs no navegador para acessar a documentação interativa.
